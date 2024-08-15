@@ -6,6 +6,7 @@ DialogAbout::DialogAbout(QWidget *parent)
     , ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
+    connect(ui->pushButtonClose,SIGNAL(clicked(bool)),this,SLOT(close()));
 }
 
 DialogAbout::~DialogAbout()
