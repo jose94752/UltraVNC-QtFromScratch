@@ -1,13 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-//#include "dialogabout.h" // Not mandatory if in the .h
+//#include "AboutBoxQt.h" // Not mandatory if in the .h
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    fenetre = new DialogAbout(this);
+    windowsvncviewerQt = new AboutBoxQt(this);
 
     //Action close on button leave
     //To Do if needed
@@ -25,7 +25,7 @@ MainWindow::~MainWindow()
 void MainWindow::About()
 {
     //Active only one of the three line below
-    //DialogAbout *fenetre = new DialogAbout(this);
-    //fenetre->exec();  // for blocking dialogue
-    fenetre->show();    // for a non-blocking dialogue
+    //AboutBoxQt *windowsvncviewerQt = new AboutBoxQt(this);
+    //windowsvncviewerQt->exec();  // for blocking dialogue
+    windowsvncviewerQt->show();    // for a non-blocking dialogue
 }

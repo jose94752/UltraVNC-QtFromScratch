@@ -9,16 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    vncviewer\dialogabout.cpp \
+    vncviewer\AboutBoxQt.cpp \
     vncviewer\main.cpp \
     vncviewer\mainwindow.cpp
 
 HEADERS += \
-    vncviewer\dialogabout.h \
+    vncviewer\AboutBoxQt.h \
     vncviewer\mainwindow.h
 
 FORMS += \
-    vncviewer\dialogabout.ui \
+    vncviewer\AboutBoxQt.ui \
     vncviewer\mainwindow.ui
 
 TRANSLATIONS += \

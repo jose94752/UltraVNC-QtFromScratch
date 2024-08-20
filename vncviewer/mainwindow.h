@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "dialogabout.h"
+#include "AboutBoxQt.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,7 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    DialogAbout *fenetre;
+    AboutBoxQt *windowsvncviewerQt;
 
 private slots:
     void About();
