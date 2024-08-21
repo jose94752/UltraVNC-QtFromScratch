@@ -1,5 +1,8 @@
-# Folder ignored comment build/ below if you want the original gitignore for Qt from GitHub
+# Customized ignore section
 build/
+UltraVNC-QtFromScratch.pro.user
+# End Customized ignore section 
+# Comment the "Customized ignore section" upper if you want the original gitignore for Qt from GitHub
 
 # C++ objects and libs
 *.slo
